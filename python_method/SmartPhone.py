@@ -21,12 +21,12 @@ class SearchPhone:
 
         numList.append({
             "idid": idid,
-            "name": nameval,
-            "hp": hpphone,
-            "email": email123,
-            "addr": addr123,
-            "groupa": groupaaa,
-            "groupb": groupbbb,
+            "nameval": nameval,
+            "hpphone": hpphone,
+            "email123": email123,
+            "addr123": addr123,
+            "groupaaa": groupaaa,
+            "groupbbb": groupbbb,
             "birth": birth,
             "grade": grade,
         })        
@@ -138,44 +138,40 @@ class SearchPhone:
         if not found:
             print("검색 결과 없음")
 
-    #def allPhone(self):
-    #    search = int(input("1. 아이디검색 선택: "))
+    def allPhone(self):
+        search = int(input("1. 아이디검색 선택\n: "))
 
-    #    key = None
-    #    value = None
+        key = None
+        value = None
        
         
-        #if search == 1:
-        #    key = "ididididid"
-        #    value = input("아이디 검색 : ")
-        #elif search == 2:
-        #    key = "groupagroupaaa"
-        #    value = input("거래처 이름 검색 : ")
-        #elif search == 3:
-        #    key = "groupbgroupbbb"
-        #    value = input("품목이름 검색 : ")
-        #elif search == 4:
-        #    key = "gradegradeabc"
-        #    value = input("직급 검색 : ")
-        #else:
-        #    print("숫자 잘못 입력함!")
-        #    return
-    #    if search == 1:
-    #        key = "idid"
-    #        value = input("아이디 검색 : ")
+        if search == 1:
+            key = "idid"
+            value = input("아이디 검색 : ")   
+        elif search == 2:
+            key = "addr123"
+            value = input("그룹 검색 : ")
+        elif search == 3:
+            key = "groupaaa"
+            value = input("그룹2 검색 : ")
+        elif search == 4:
+            key = "groupbbb"     
+        else:
+            print("숫자 잘못 입력함!")
+            return
 
-    #    for data in numList:
-    #        if data[key] == value:
-    #            print("\n아이디:", data["id"])
-    #            print("이름:", data["name"])
-    #            print("번호:", data["hp"])
-    #            print("이메일:", data["email"]) 
-    #            print("그룹:", data["groupa"]) 
-    #            print("그룹2:", data["groupb"]) 
-    #            print("생일:", data["birth"]) 
-    #            print("직급:", data["grade"]) 
-                            
-    #            found = True
+        for addr in numList:
+            if addr[key] == value:
+                print("\n아이디:", addr["idid"])
+                print("이름:", addr["nameval"])
+                print("번호:", addr["hpphone"])
+                print("이메일:", addr["email123"])
+                print("주소:", addr["addr123"])
+                print("그룹:", addr["groupaaa"]) 
+                print("그룹2:", addr["groupbbb"]) 
+                print("생일:", addr["birth"]) 
+                print("직급:", addr["grade"])                            
+                found = True
 
-    #    if not found:
-    #        print("검색 결과 없음")
+        if not found:
+            print("검색 결과 없음")
