@@ -5,7 +5,7 @@ dataCount = 0
 
 class SearchPhone:
 
-    def inputAddr(self):
+    def InputAddr(self):
         global dataCount
 
         idid = input("아이디 입력 : ")
@@ -34,7 +34,7 @@ class SearchPhone:
         dataCount += 1
         print("모든 연락처 저장 완료!")
     
-    def companyAddr(self):
+    def CompanyAddr(self):
         global dataCount
 
         id = input("아이디 입력 : ")
@@ -52,7 +52,7 @@ class SearchPhone:
         dataCount += 1
         print("저장 완료!")
 
-    def customerAddr(self):
+    def CustomerAddr(self):
         global dataCount
 
         id123 = input("아이디 입력 : ")
@@ -70,7 +70,7 @@ class SearchPhone:
         dataCount += 1
         print("저장 완료!")
 
-    def searchPhone(self):
+    def SearchPhone(self):
         search = int(input("1. 아이디검색\n2. 회사검색\n3. 부서검색\n4. 직급검색\n선택: "))
 
         key = None
@@ -104,7 +104,7 @@ class SearchPhone:
         if not found:
             print("검색 결과 없음")
 
-    def searchPhone2(self):
+    def SearchPhone2(self):
         search = int(input("1. 아이디검색\n2. 거래처 이름검색\n3. 품목이름검색\n4. 직급검색\n선택: "))
 
         key = None
