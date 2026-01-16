@@ -1,4 +1,4 @@
-from wegwegegwegwegwegweg import SearchPhone
+from SmartPhone import SearchPhone
 
 class Ssss:
 
@@ -18,7 +18,7 @@ class Ssss:
     def start(self):
         while True:
             self.print_menu()
-            cho = input("원하는 작업을 고르세요! ")
+            cho = input("원하는 작업을 고르세요: ")
 
             #if cho == '1':
             #    self.book.inputAddr()
@@ -27,7 +27,7 @@ class Ssss:
                 self.book.companyAddr()
 
             elif cho == '2':
-                self.book.costomerAddr()
+                self.book.customerAddr()
 
             elif cho == '3':
                 self.book.searchPhone()
