@@ -20,7 +20,7 @@ class SearchPhone:
 
 
         numList.append({
-            "id": idid,
+            "idid": idid,
             "name": nameval,
             "hp": hpphone,
             "email": email123,
@@ -37,34 +37,34 @@ class SearchPhone:
     def companyAddr(self):
         global dataCount
 
-        ididid = input("아이디 입력 : ")
-        groupagroupa = input("회사 입력 : ")
-        groupbgroupb = input("부서 입력 : ")
-        gradegrade = input("직급 입력 : ")
+        id = input("아이디 입력 : ")
+        groupa = input("회사 입력 : ")
+        groupb = input("부서 입력 : ")
+        grade = input("직급 입력 : ")
 
         numList123.append({
-            "ididid": ididid,
-            "groupagroupa": groupagroupa,
-            "groupbgroupb": groupbgroupb,
-            "gradegrade": gradegrade
+            "id": id,
+            "groupa": groupa,
+            "groupb": groupb,
+            "grade": grade
         })
 
         dataCount += 1
         print("저장 완료!")
 
-    def costomerAddr(self):
+    def customerAddr(self):
         global dataCount
 
-        ididididid = input("아이디 입력 : ")
-        groupagroupaaa = input("거래처 이름 입력 : ")
-        groupbgroupbbb = input("품목이름 입력 : ")
-        gradegradeabc = input("직급 입력 : ")
+        id123 = input("아이디 입력 : ")
+        groupaaa = input("거래처 이름 입력 : ")
+        groupbbb = input("품목이름 입력 : ")
+        gradeabc = input("직급 입력 : ")
 
         numList12345.append({
-            "ididididid": ididididid,
-            "groupagroupaaa": groupagroupaaa,
-            "groupbgroupbbb": groupbgroupbbb,
-            "gradegradeabc": gradegradeabc
+            "id123": id123,
+            "groupaaa": groupaaa,
+            "groupbbb": groupbbb,
+            "gradeabc": gradeabc
         })
 
         dataCount += 1
@@ -77,16 +77,16 @@ class SearchPhone:
         value = None
 
         if search == 1:
-            key = "ididid"
+            key = "id"
             value = input("아이디 검색 : ")
         elif search == 2:
-            key = "groupagroupa"
+            key = "groupa"
             value = input("회사 검색 : ")
         elif search == 3:
-            key = "groupbgroupb"
+            key = "groupb"
             value = input("부서 검색 : ")
         elif search == 4:
-            key = "gradegrade"
+            key = "grade"
             value = input("직급 검색 : ")
         else:
             print("숫자 잘못 입력함!")
@@ -95,10 +95,10 @@ class SearchPhone:
         found = False
         for data123 in numList123:
             if data123[key] == value:
-                print("\n아이디:", data123["ididid"])
-                print("회사:", data123["groupagroupa"])
-                print("부서:", data123["groupbgroupb"])
-                print("직급:", data123["gradegrade"])
+                print("\n아이디:", data123["id"])
+                print("회사:", data123["groupa"])
+                print("부서:", data123["groupb"])
+                print("직급:", data123["grade"])
                 found = True
 
         if not found:
@@ -111,16 +111,16 @@ class SearchPhone:
         value = None
 
         if search == 1:
-            key = "ididididid"
+            key = "id123"
             value = input("아이디 검색 : ")
         elif search == 2:
-            key = "groupagroupaaa"
+            key = "groupaaa"
             value = input("거래처 이름 검색 : ")
         elif search == 3:
-            key = "groupbgroupbbb"
+            key = "groupbbb"
             value = input("품목이름 검색 : ")
         elif search == 4:
-            key = "gradegradeabc"
+            key = "gradeabc"
             value = input("직급 검색 : ")
         else:
             print("숫자 잘못 입력함!")
@@ -129,10 +129,10 @@ class SearchPhone:
         found = False
         for data12345 in numList12345:
             if data12345[key] == value:
-                print("\n아이디:", data12345["ididididid"])
-                print("거래처 이름:", data12345["groupagroupaaa"])
-                print("품목이름:", data12345["groupbgroupbbb"])
-                print("직급:", data12345["gradegradeabc"])
+                print("\n아이디:", data12345["id123"])
+                print("거래처 이름:", data12345["groupaaa"])
+                print("품목이름:", data12345["groupbbb"])
+                print("직급:", data12345["gradeabc"])
                 found = True
 
         if not found:
