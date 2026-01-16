@@ -24,16 +24,16 @@ class Ssss:
             #    self.book.inputAddr()
 
             if cho == '1':
-                self.book.companyAddr()
+                self.book.CompanyAddr()
 
             elif cho == '2':
-                self.book.customerAddr()
+                self.book.CustomerAddr()
 
             elif cho == '3':
-                self.book.searchPhone()
+                self.book.SearchPhone()
             
             elif cho == '4':
-                self.book.searchPhone2()
+                self.book.SearchPhone2()
 
             #elif cho == '6':
             #    self.book.allPhone()
