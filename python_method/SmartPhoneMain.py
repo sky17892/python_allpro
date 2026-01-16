@@ -7,38 +7,38 @@ class Ssss:
 
     def print_menu(self):
         print("\n====================") 
-        #print("1. 전화번호 전체등록") 
-        print("1. 전화번호 등록(회사)")
-        print("2. 전화번호 등록(거래처)")
-        print("3. 전화번호 검색(회사)")
-        print("4. 전화번호 검색(거래처)")
-        #print("5. 전화번호 모든 검색")
-        print("5. 종료")
+        print("1. 전화번호 전체등록") 
+        print("2. 전화번호 등록(회사)")
+        print("3. 전화번호 등록(거래처)")
+        print("4. 전화번호 검색(회사)")
+        print("5. 전화번호 검색(거래처)")
+        print("6. 전화번호 모든 검색")
+        print("7. 종료")
 
     def start(self):
         while True:
             self.print_menu()
             cho = input("원하는 작업을 고르세요: ")
 
-            #if cho == '1':
-            #    self.book.inputAddr()
-
             if cho == '1':
-                self.book.CompanyAddr()
+                self.book.InputAddr()
 
             elif cho == '2':
-                self.book.CustomerAddr()
+                self.book.CompanyAddr()
 
             elif cho == '3':
+                self.book.CustomerAddr()
+
+            elif cho == '4':
                 self.book.SearchPhone()
             
-            elif cho == '4':
+            elif cho == '5':
                 self.book.SearchPhone2()
 
-            #elif cho == '6':
-            #    self.book.allPhone()
+            elif cho == '6':
+                self.book.allPhone()
 
-            elif cho == '5':
+            elif cho == '7':
                 print("프로그램 종료")
                 break
 
